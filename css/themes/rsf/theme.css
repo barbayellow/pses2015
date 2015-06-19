@@ -1,0 +1,170 @@
+/*
+	Copyright (c) 2011 Brian Cavalier
+	LICENSE: see the LICENSE.txt file. If file is missing, this file is subject
+	to the MIT License at: http://www.opensource.org/licenses/mit-license.php.
+*/
+
+@import "../basic.css";
+
+body {
+     background-image: url("bg.png")
+}
+
+.slide a:link,
+.slide a:visited,
+.slide a:focus {
+  background-color: #333;
+  text-decoration: none;
+  color: #fff;
+  font-weight: normal;
+  text-shadow: -1px -1px 2px rgba(100,100,100,0.9);
+  border-radius: 0.2em;
+  padding: .02em .3em;
+}
+
+.slide a.noborder:link,
+.slide a.noborder:visited,
+.slide a.noborder:focus {
+  background: none;
+  text-decoration: inherit;
+  color: inherit;
+  text-shadow: none;
+  padding: 0;
+}
+
+
+.slide a:hover,
+.slide a:active {
+  background-color: #2e88db;
+  text-decoration: none;
+  color: #fff;
+}
+
+.slide-view-module {
+	margin-top: 4em;
+}
+
+.slide {
+	font-size: 250%;
+}
+
+.slide h1 {
+	font-size: 3.1em;
+	font-weight: bold;
+	color: #dadada;
+	text-rendering: optimizeLegibility;
+	letter-spacing: -0.05em;
+	font-family: Arial, helvetica, sans-serif;
+  	letter-spacing: -0.06em;
+	margin-bottom: .2em;
+}
+
+.slide h2 {
+	color: #444;
+	margin-top: 0;
+	margin-left: .5em;
+}
+
+.slide p {
+	color: #222;
+	margin: 0 0 1em 1em;
+	line-height: 1.3;
+}
+
+.slide em {
+	font-style: normal;
+	color: #888;
+}
+
+.slide ul > ul {
+	font-size: 90%;
+}
+
+.slide li {
+	margin-bottom: .5em;
+	list-style: square;
+	line-height: 1.3;
+}
+
+.slide .slide-layout-title {
+	padding-top: 2em;
+}
+
+.slide blockquote  {
+    background: url("blockquote.png") no-repeat scroll top left transparent;
+    padding: .5em 0 0 2em;
+	color: #666;
+}
+.slide blockquote q {
+   font-style: italic;
+}
+.slide blockquote p {
+	margin:0;
+}
+.slide cite {
+	color: #999;
+	font-size: .5em;
+}
+.slide q:before, .slide q:after {
+    content: '';
+    content: none;
+}
+
+
+.slide code {
+  background-color: #F2F2F2;
+  border: 1px solid #CCCCCC;
+  color: #111111;
+  display: block;
+  font-family: "Courier New",Courier,monospace;
+  font-size: .9em;
+  line-height: 1;
+  margin: .5em 0;
+  overflow: auto;
+  padding: 1em;
+  white-space: pre;
+}
+
+.dummies {
+  padding-bottom: .5em;
+  background: transparent url('dummies.jpg') no-repeat bottom right;
+}
+
+footer a:link,a:visited,a:focus {
+  background-color: transparent;
+  text-decoration: none;
+  color: #999;
+  padding: 0;
+  text-shadow: none;
+  border-radius: 0;
+  padding: 0;
+}
+footer a:hover, footer a:active {}
+
+@media screen and (max-device-width: 480px) {
+	.slide-view-module {
+		margin-top: 2em;
+	}
+
+	.slide {
+		font-size: 90%;
+	}
+
+	.slide .slide-layout-title {
+		padding-top: 0;
+	}
+
+	.slide p {
+		font-size: 1.25em;
+		margin-left: .25em;
+	}
+
+	.slide h2 {
+		margin-left: .25em;
+	}
+
+	.slide li {
+		font-size: 1.25em;
+	}
+
+}
